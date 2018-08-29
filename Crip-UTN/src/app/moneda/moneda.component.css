@@ -1,0 +1,27 @@
+*{
+    box-sizing: border-box;
+}
+.tablas .titulo{
+    width: 100%;
+    text-align: center;
+    background: #F5F7F9;
+    color: #5A5A5A;
+    padding: 25px;
+}
+
+.tablas{
+    width: 100%;
+}
+.tablas .tablares{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.tablas .tablares .ta{
+    width: 50%;
+    margin: 10px;
+}
+.tablas .ta1{
+    width: 90%;
+    margin: auto;
+}

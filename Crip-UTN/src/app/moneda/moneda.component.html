@@ -1,0 +1,115 @@
+<div class="tablas">
+
+  <div class="titulo">
+    <h2>Estadísticas Monetarias</h2>
+    <p>Resumen de Estadísticas de bticoin para el periodo de 24 horas anterior.</p>
+  </div>
+  <div class="tablares">
+
+    <div class="ta">
+      <h2>Block Summary</h2>
+      <table class="table table-dark table-striped">
+        <tbody>
+          <tr>
+            <th scope="row">Bloques Minados</th>
+            <td>{{data.n_blocks_mined}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Tiempo entre Bloques</th>
+            <td>{{data.minutes_between_blocks}} Minutes</td>
+          </tr>
+          <tr>
+            <th scope="row">Bitcoins Minados</th>
+            <td>{{data.n_btc_mined}} BTC</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="ta">
+      <h2>Resumen del Mercado</h2>
+      <table class="table table-dark table-striped">
+        <tbody>
+          <tr>
+            <th scope="row">Precio del Mercado</th>
+            <td>$ {{data.market_price_usd}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Volumen de Intercambio</th>
+            <td>$ {{data.trade_volume_usd}}</td>
+          </tr>
+          <tr>
+            <th scope="row">Volumen de Intercambio</th>
+            <td>{{data.trade_volume_btc}} BTC</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  
+  <div class="ta1">
+    <h2>Transaction Summary</h2>
+    <table class="table table-dark table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Comisiones Totales de Transacciones (BTC)</th>
+          <td>{{data.total_fees_btc}} BTC</td>
+        </tr>
+        <tr>
+          <th scope="row">Número de Transacciones</th>
+          <td>{{data.n_tx}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Volumen de Salida Total (BTC)</th>
+          <td>{{data.total_btc_sent}} BTC</td>
+        </tr>
+        <tr>
+          <th scope="row">Volumen de Transacciones Estimadas (BTC)</th>
+          <td>{{data.estimated_btc_sent}} BTC</td>
+        </tr>
+        <tr>
+          <th scope="row">Volumen de Transacciones Estimadas(USD)</th>
+          <td>$ {{data.estimated_transaction_volume_usd}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ta1">
+    <h2>Coste de la Mineria</h2>
+    <table class="table table-dark table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Beneficios Totales de los Mineros (USD)</th>
+          <td>$ {{data.miners_revenue_usd}} BTC</td>
+        </tr>
+        <tr>
+          <th scope="row">% Obtenido De Las Comisiones Por Transacciones</th>
+          <td>1.06%</td>
+        </tr>
+        <tr>
+          <th scope="row">% Del Volumen De Transacciones</th>
+          <td>1.35%</td>
+        </tr>
+        <tr>
+          <th scope="row">Coste por Transacción (USD)</th>
+          <td>$ 54.68</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="ta1">
+    <h2>Tasa de Hash y Consumo Energético</h2>
+    <table class="table table-dark table-striped">
+      <tbody>
+        <tr>
+          <th scope="row">Dificultad</th>
+          <td>$ {{data.difficulty}}</td>
+        </tr>
+        <tr>
+          <th scope="row">Tasa de Hash</th>
+          <td>{{data.hash_rate}}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>

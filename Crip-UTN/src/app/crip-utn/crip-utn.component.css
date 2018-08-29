@@ -1,0 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+.cartas{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+
+}

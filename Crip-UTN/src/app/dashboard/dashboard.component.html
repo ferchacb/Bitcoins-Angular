@@ -1,0 +1,104 @@
+<div class="conte">
+
+  <div class="titulo">
+    <h2>Distribución de tasas de hash Una estimación de la distribución de las tasas de hash entre los pools de minería de mayor
+      tamaño
+    </h2>
+  </div>
+
+  <div class="grafico">
+    <div style="width: 90%; margin: auto;">
+      <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType" (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"></canvas>
+    </div>
+  </div>
+
+  <div class="tabla">
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Resuelto Por</th>
+          <th scope="col">Conteo</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">AntPool</th>
+          <td>{{data.AntPool}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">BTC.com</th>
+          <td>{{data["BTC.com"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">ViaBTC</th>
+          <td>{{data.ViaBTC}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">SlushPool</th>
+          <td>{{data.SlushPool}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">BTC TOP</th>
+          <td>{{data["BTC.TOP"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">Unknown</th>
+          <td>{{data.Unknown}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">Poolin</th>
+          <td>{{data.Poolin}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">Bixin</th>
+          <td>{{data.Bixin}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">F2Pool</th>
+          <td>{{data.F2Pool}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">BitClub Network</th>
+          <td>{{data["BitClub Network"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">DPOOL</th>
+          <td>{{data.DPOOL}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">58COIN</th>
+          <td>{{data["58COIN"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">Bitcoin.com</th>
+          <td>{{data["Bitcoin.com"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">CKPool</th>
+          <td>{{data.CKPool}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">BTCC Pool</th>
+          <td>{{data["BTCC Pool"]}}</td>
+        </tr>
+        <tr>
+          <th scope="row" style="color:cornflowerblue;">BitFury</th>
+          <td>{{data.BitFury}}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Resuelto Por</th>
+          <th scope="col">Conteo</th>
+        </tr>
+      </thead>
+    </table>
+
+  </div>
+
+</div>

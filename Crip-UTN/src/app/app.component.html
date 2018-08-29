@@ -1,0 +1,15 @@
+<header> 
+  <div class="titulo">
+      <h2>Gráficos de Bitcoin</h2>
+      <p>La fuente más confiable de datos sobre la cadena de bloques bitcoin.</p>
+  </div>
+  <div class="nav">
+      <button type="button" class="btn btn-link btn-lg" (click)="!visible1" routerLink="crip-utn">Estadísticas Populares</button>
+      <button type="button" class="btn btn-link btn-lg" (click)="!visible2" routerLink="moneda">Estadísticas de Moneda</button>
+      <button type="button" class="btn btn-link btn-lg" (click)="!visible3" routerLink="dashboard">Información de Extracción</button>
+  </div>
+</header>
+<router-outlet></router-outlet>
+<app-crip-utn *ngIf="visible1"></app-crip-utn>
+<app-moneda *ngIf="visible2"></app-moneda>
+<app-dashboard *ngIf="visible3"></app-dashboard>

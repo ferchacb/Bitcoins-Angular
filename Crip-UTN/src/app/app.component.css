@@ -1,0 +1,16 @@
+header{
+    width: 100%;
+    background: #F5F7F9;
+    text-align: center;
+    color: #5A5A5A;
+}
+header .titulo{
+    padding: 20px;
+}
+header .nav{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background: #E3EFF5;
+}

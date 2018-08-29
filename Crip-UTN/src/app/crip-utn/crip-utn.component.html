@@ -1,0 +1,47 @@
+<div class="cartas">
+
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header border-primary text-center">Precio de Mercado (USD)</div>
+    <div class="card-body border-primary">
+      <div *ngFor="let data of dataprecio; let last = last">
+        <h5 class="card-title text-center" style="color: deepskyblue;" *ngIf="last === true">${{data.y}}</h5>
+      </div>
+      <p class="card-text text-center" style="color: deepskyblue;">USD</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary" style="font-size: 13px; color: gray;">Precio medio de mercado en USD a trávez de intercambios importantes de bitcoin.
+    </div>
+  </div>
+
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header border-primary text-center">Tamaño de Bloque Promedio</div>
+    <div class="card-body">
+      <div *ngFor="let data of databloque; let last = last">
+        <h5 class="card-title text-center" style="color: deepskyblue;" *ngIf="last === true">{{data.y}}</h5>
+      </div>
+      <p class="card-text text-center" style="color: deepskyblue;">Megabytes</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary" style="font-size: 13px; color: gray;">El tamaño del paquete promedio de 24 horas en MB</div>
+  </div>
+
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header border-primary text-center">Transaction per Day</div>
+    <div class="card-body">
+      <div *ngFor="let data of datatrans; let last = last">
+        <h5 class="card-title text-center" style="color: deepskyblue;" *ngIf="last === true">{{data.y}}</h5>
+      </div>
+      <p class="card-text text-center" style="color: deepskyblue;">Transactions</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary" style="font-size: 13px; color: gray;">El número total de transacciones Bitcoin confirmadas en las ultimas 24 horas.</div>
+  </div>
+
+  <div class="card border-primary mb-3" style="max-width: 18rem;">
+    <div class="card-header border-primary text-center">Tamaño Mempool</div>
+    <div class="card-body" style="color: deepskyblue;">
+      <div *ngFor="let data of datatama; let last = last">
+        <h5 class="card-title text-center" style="color: deepskyblue;" *ngIf="last === true">{{data.y}}</h5>
+      </div>
+      <p class="card-text text-center">Bytes</p>
+    </div>
+    <div class="card-footer bg-transparent border-primary" style="font-size: 13px; color: gray;">El tamaño total de las operaciones a la espera de ser confirmadas.</div>
+  </div>
+</div>
